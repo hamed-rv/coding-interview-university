@@ -14,6 +14,8 @@
 >
 > *با آرزوی موفقیت*
 
+<div dir="rtl">
+&#x202b; 
 <details>
 <summary>ترجمه ها:</summary>
 
@@ -29,8 +31,10 @@
 - [Bahasa Indonesia](translations/README-id.md)
 - [ខ្មែរ - Khmer](translations/README-kh.md)
 - [Uzbek](translations/README-uz.md)
+- [Persian - فارسی](translations/README-fa.md)	
 
 </details>
+
 
 <details>
 <summary>در حال ترجمه:</summary>
@@ -49,13 +53,13 @@
 - [Malayalam](https://github.com/jwasham/coding-interview-university/issues/239)
 
 </details>
-
-<div align="center">
-	<hr />
+</div>
+<div align="center" dir="rtl">
+	<hr/>
     <p>
-        <a href="https://github.com/sponsors/jwasham"><strong>Become a sponsor</strong> and support Coding Interview University!</a>
+        <a href="https://github.com/sponsors/jwasham"><strong>حامی مالی شوید</strong> و از دانشگاه مصاحبه کدنویسی حمایت کنید!</a>
     </p>
-    <hr />
+    <hr/>
 </div>
 
 ## این چیه؟
@@ -70,9 +74,10 @@
 * زمان
 
 <div dir="rtl">
-توجه داشته باشید که این یک برنامه مطالعاتی برای **مهندسی نرم افزار** است، نه توسعه وب. شرکت های بزرگ نرم افزاری مانند گوگل، آمازون،
+توجه داشته باشید که این یک برنامه مطالعاتی برای <strong>مهندسی نرم افزار </strong>است، نه توسعه وب. شرکت های بزرگ نرم افزاری مانند گوگل، آمازون،
 فیس بوک و مایکروسافت مهندسی نرم افزار را متفاوت از توسعه وب می دانند. برای مثال در آمازون مهندسین فرانت اند (FEE) و مهندسان توسعه نرم افزار (SDE) وجود دارند. این دو تا نقش های جداگانه هستند و مصاحبه برای آنها یکسان نخواهد بود، زیرا هر کدام شایستگی های خاص خود را دارند. این شرکت ها برای نقش های توسعه نرم افزار/مهندسی نیاز به دانش علوم کامپیوتر دارند.
 </div>
+
 ---
 
 ## فهرست مطالب
@@ -106,7 +111,7 @@
     - [جستجوی باینری](#جستجوی-باینری)
     - [Bitwise operations](#bitwise-operations)
 - [درخت ها](#درخت-ها)
-    - [درخت ها - یادداشت ها و پس زمینه](#درختها---یادداشت-ها-و-پس-زمینه)
+    - [درخت ها - مقدمه](#درختها---یادداشت-ها-و-پس-زمینه)
     - [درخت جستجوی دودویی: BSTs](#درخت-جستوجوی-دودویی-bsts)
     - [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
     - درخت جستجوی متعادل (مفهوم کلی، نه جزئیات)
@@ -121,14 +126,14 @@
     - جهت دار (directed)
     - بدون جهت (undirected)
     - ماتریس مجاورت (adjacency matrix)
-    - لیست مجاورت (adjacency list
-    - traversals: BFS, DFS)
+    - لیست مجاورت (adjacency list)
+    - پیمایش: BFS, DFS
 - [موارد حتی بیشتر](#موارد-حتی-بیشتر)
     - [بازگشت](#بازگشت)
     - [برنامه نویسی پویا](#برنامه-نویسی-پویا)
     - [الگوهای-طراحی](#الگوهای-طراحی)
-    - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
-    - [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
+    - [ترکیبات (n انتخاب k) و احتمال](#combinatorics-n-choose-k--probability)
+    - [NP, NP-کامل و الگوریتم های تقریب](#np-np-complete-and-approximation-algorithms)
     - [چگونه کامپیوتر یک برنامه را پردازش می کنند](#چگونه-کامپیوتر-یک-برنامه-را-پردازش-میکند)
     - [حافظه نهان](#حافطه-نهان)
     - [پردازش و نخ](#پردازش-و-نخ)
@@ -158,35 +163,35 @@
 - [طراحی سیستم، مقیاس پذیری، مدیریت داده ها](#طراحی-سیستم-مقیاس-پذیری-مدیریت-داده-ها) (اگر بیش از 4 سال تجربه دارید)
 - [یادگیری بیشتر](#additional-learning)
     - [کامپایلرها](#کامپایلرها)
-    - [Emacs and vi(m)](#emacs-and-vim)
-    - [Unix command line tools](#unix-command-line-tools)
+    - [Emacs و vi(m)](#emacs-and-vim)
+    - [Unix ابزار های خط فرمان](#unix-command-line-tools)
     - [نظریه اطلاعات](#نظریه-اطلاعات)
-    - [Parity & Hamming Code](#parity--hamming-code-videos)
+    - [زوجیت و کد همینگ](#parity--hamming-code-videos)
     - [Entropy](#entropy)
     - [رمزنگاری](#رمزنگاری)
     - [فشرده سازی](#فشرده-سازی)
-    - [Computer Security](#computer-security)
-    - [Garbage collection](#garbage-collection)
+    - [امنیت کامپیوتر](#computer-security)
+    - [زباله روبی (Garbage Collection)](#garbage-collection)
     - [برنامه نویسی موازی](#برنامه-نویسی-موازی)
-    - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
+    - [سیستم های پیام رسانی، سریال سازی و صف بندی](#messaging-serialization-and-queueing-systems)
     - [A*](#a)
-    - [Fast Fourier Transform](#fast-fourier-transform)
-    - [Bloom Filter](#bloom-filter)
+    - [تبدیل فوریه سریع](#fast-fourier-transform)
+    - [Bloom فیلتر](#bloom-filter)
     - [HyperLogLog](#hyperloglog)
     - [Locality-Sensitive Hashing](#locality-sensitive-hashing)
-    - [van Emde Boas Trees](#van-emde-boas-trees)
-    - [Augmented Data Structures](#augmented-data-structures)
-    - [Balanced search trees](#balanced-search-trees)
-        - AVL trees
-        - Splay trees
-        - Red/black trees
-        - 2-3 search trees
-        - 2-3-4 Trees (aka 2-4 trees)
-        - N-ary (K-ary, M-ary) trees
-        - B-Trees
-    - [k-D Trees](#k-d-trees)
-    - [Skip lists](#skip-lists)
-    - [Network Flows](#network-flows)
+    - [van Emde Boas درختان](#van-emde-boas-trees)
+    - [ساختارهای داده افزوده شده](#augmented-data-structures)
+    - [درختان جستجوی متعادل](#balanced-search-trees)
+        - درختان AVL
+        - درختان Splay
+        - درختان سیاه/قرمز Red/black
+        - درختان جستجوی 2-3 
+        - درختان 2-3-4  (aka 2-4 درختان)
+        - درختان N-ary (K-ary, M-ary) 
+        - درختان B-Trees
+    - [k-D درختان](#k-d-trees)
+    - [رد شدن از لیست ها](#skip-lists)
+    - [جریان های شبکه](#network-flows)
     - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
     - [ریاضی برای پردازش سریع](#ریاضی-برای-پردازش-سریع)
     - [Treap](#treap)
